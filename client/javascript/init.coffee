@@ -4,7 +4,6 @@
 
 $ = require 'jquery'
 App = require './app'
-Demo = require './modules/react/demo'
 
 $(document).ready ->
   App.start()

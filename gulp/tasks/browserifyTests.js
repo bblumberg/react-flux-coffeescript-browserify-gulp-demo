@@ -21,7 +21,7 @@ gulp.task('browserifyTests', function() {
     // Specify the entry point of your app
     entries: ['./test/init.coffee'],
     // Add file extentions to make optional in your requires
-    extensions: ['.coffee', '.hbs'],
+    extensions: ['.coffee', '.hbs', '.cjsx'],
     // Enable source maps.
     debug: true
   });

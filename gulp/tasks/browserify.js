@@ -12,10 +12,6 @@ var bundleLogger = require('../util/bundleLogger');
 var gulp         = require('gulp');
 var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
-var coffeeReactify = require('coffee-reactify');
-var reactify = require('reactify');
-var hbsfy = require('hbsfy');
-var coffeeify = require('coffeeify');
 
 gulp.task('browserify', function() {
   var dest = './build';
@@ -26,7 +22,7 @@ gulp.task('browserify', function() {
     // Specify the entry point of your app
     entries: ['./client/javascript/init.coffee'],
     // Add file extentions to make optional in your requires
-    extensions: ['.coffee', '.hbs'],
+    extensions: ['.coffee', '.hbs', '.cjsx'],
     // Enable source maps.
     debug: true
   });
@@ -36,7 +32,6 @@ gulp.task('browserify', function() {
     bundleLogger.start();
 
     return bundler
-      //.transform(coffeeReactify)
       .bundle()
       // Report compile errors
       .on('error', handleErrors)
