@@ -1,0 +1,10 @@
+.DS_Store
+.sass-cache
+.yo-rc.json
+npm-debug.log
+build
+Desktop.ini
+node_modules
+bower_components
+data
+coverage
