@@ -36,14 +36,27 @@ Start App
 
 ## Instructions for Specific Demos
 
-### Comment Module -- http://facebook.github.io/react/docs/tutorial.html
+### Comments Module
+http://facebook.github.io/react/docs/tutorial.html
+
 - Add a directory 'data' to build/ with the following json data:
+
 ```
 [
   {"author": "Pete Hunt", "text": "This is one comment"},
   {"author": "Jordan Walke", "text": "This is *another* comment"}
 ]
 ```
+
+- Note: the POST ajax request currently doesn't work
+because we depend on browsersync which only provides
+a static server meant to serve assets.
+
+
+## Sources
+- http://viget.com/extend/gulp-browserify-starter-faq
+- https://github.com/Ehesp/Responsive-Dashboard
+- https://github.com/JSteunou/marionetteify
 
 ## License
 MIT
