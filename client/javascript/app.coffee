@@ -11,7 +11,7 @@ require './common/hbs_helpers'
 # Require specific admin panel modules below.
 HeaderModule = require './modules/header/header_module'
 SidebarModule = require './modules/sidebar/sidebar_module'
-ReactModule = require './modules/react/commentBox'
+CommentModule = require './modules/react/commentModule'
 
 # Create new Marionette app.
 App = new Marionette.Application()
