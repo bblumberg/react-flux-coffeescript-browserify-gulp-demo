@@ -1,10 +1,14 @@
 # @cjsx React.DOM
 
+'use strict'
+
 React = require('react')
+$ = require('jquery')
+
 CommentList = require('./commentList')
 CommentForm = require('./commentForm')
 
-module.exports = React.createClass
+CommentBox = React.createClass
   loadCommentsFromServer: ->
     $.ajax(
       url: @props.url
@@ -47,3 +51,5 @@ module.exports = React.createClass
       <CommentList data={@state.data} />
       <CommentForm onCommentSubmit={@handleCommentSubmit} />
     </div>
+
+module.exports = CommentBox

@@ -1,5 +1,7 @@
 # @cjsx React.DOM
 
+'use strict'
+
 React = require('react')
 Comment = require('./comment')
 

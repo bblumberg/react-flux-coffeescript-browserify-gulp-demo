@@ -12,6 +12,6 @@ gulp.task('build', [
   'copy-less',
   'copy-images',
   'copy-fonts',
-  'coffee-lint',
+  'copy-data',
   'copy-html'
 ]);

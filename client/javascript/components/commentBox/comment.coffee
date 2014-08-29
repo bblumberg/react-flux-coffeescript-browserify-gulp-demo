@@ -1,7 +1,10 @@
 # @cjsx React.DOM
 
+'use strict'
+
 React = require('react')
 Showdown = require('showdown')
+
 converter = new Showdown.converter()
 
 module.exports = React.createClass

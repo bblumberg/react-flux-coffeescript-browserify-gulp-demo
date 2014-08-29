@@ -36,7 +36,7 @@ Start App
 
 ## Instructions for Specific Demos
 
-### Comments Module
+### CommentBox Module
 http://facebook.github.io/react/docs/tutorial.html
 
 - Add a directory 'data' to build/ with the following json data:
@@ -47,10 +47,6 @@ http://facebook.github.io/react/docs/tutorial.html
   {"author": "Jordan Walke", "text": "This is *another* comment"}
 ]
 ```
-
-- Note: the POST ajax request currently doesn't work
-because we depend on browsersync which only provides
-a static server meant to serve assets.
 
 
 ## Sources
