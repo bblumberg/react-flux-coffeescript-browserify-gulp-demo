@@ -11,5 +11,6 @@ gulp.task('watch', ['setWatch', 'browserSync'], function() {
   gulp.watch('client/less/**', ['copy-less']);
   gulp.watch('client/fonts/**', ['copy-fonts']);
   gulp.watch('client/images/**', ['copy-images']);
+  gulp.watch('server/**/*', ['copy-server']);
   gulp.watch('client/index.html', ['copy-html']);
 });

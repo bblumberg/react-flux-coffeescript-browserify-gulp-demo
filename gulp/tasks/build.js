@@ -9,9 +9,9 @@ gulp.task('build', [
   'copy-bower-files',
   'copy-fontawesome-fonts',
   'copy-bootstrap-fonts',
+  'copy-html',
   'copy-less',
   'copy-images',
-  'copy-fonts',
-  'copy-data',
-  'copy-html'
+  'copy-server',
+  'copy-fonts'
 ]);

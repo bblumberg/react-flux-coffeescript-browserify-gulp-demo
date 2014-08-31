@@ -3,21 +3,15 @@
   "engines": {
     "node": ">=0.10.0"
   },
+  "scripts": {
+    "server": "node ./build/server/app.js"
+  },
   "browser": {
     "jquery": "./client/bower_components/jquery/dist/jquery.js",
     "jquery.cookie": "./client/bower_components/jquery.cookie/jquery.cookie.js",
     "underscore": "./client/bower_components/lodash/dist/lodash.underscore.js",
-
-    "bootstrap": "./client/bower_components/bootstrap/dist/js/bootstrap.js",
-    "bootstrap.transition": "./client/javascript/vendor/bootstrap-transition-browserify-shimmed.js",
-    "bootstrap.collapse": "./client/javascript/vendor/bootstrap-collapse-browserify-shimmed.js",
-
-    "backbone": "./client/bower_components/backbone/backbone.js",
-    "backbone.wreqr": "./client/bower_components/backbone.wreqr/lib/backbone.wreqr.js",
-    "backbone.babysitter": "./client/bower_components/backbone.babysitter/lib/backbone.babysitter.js",
-    "backbone.marionette": "./client/bower_components/backbone.marionette/lib/backbone.marionette.js",
-    "backbone.picky": "./client/bower_components/backbone.picky/lib/backbone.picky.js",
-    "backbone.queryparams": "./client/bower_components/backbone-query-parameters/backbone.queryparams-1.1-shim.js"
+    "showdown": "./client/javascript/vendor/showdown-shimmed.js",
+    "bootstrap": "./client/bower_components/bootstrap/dist/js/bootstrap.js"
   },
   "browserify": {
     "transform": [
@@ -34,6 +28,7 @@
     "browserify": "~5.10.1",
     "browserify-shim": "~3.7.0",
     "coffeeify": "~0.7.0",
+    "coffee-reactify": "~0.5.0",
     "hbsfy": "~2.0.0",
     "vinyl-source-stream": "~0.1.1",
     "watchify": "~1.0.2",
@@ -45,14 +40,16 @@
     "gulp-changed": "~1.0.0",
     "gulp-imagemin": "~1.0.1",
     "gulp-notify": "~1.5.0",
+    "gulp-nodemon": "~1.0.4",
     "gulp-open": "~0.2.8",
     "gulp-util": "~3.0.0",
     "gulp": "~3.8.7",
     "gulp-coffeelint": "~0.3.4",
     "gulp-autoprefixer": "~0.0.9",
     "gulp-rimraf": "~0.1.0",
+    "gulp-shell": "~0.2.9",
+    "run-sequence": "~0.3.6",
 
-    "react-tools": "~0.11.1",
     "react": "~0.11.1",
 
     "karma": "~0.12.22",
@@ -63,6 +60,10 @@
 
     "showdown": "~0.3.1",
     "lodash": "~2.4.1",
-    "handlebars": "~1.3.0"
+    "express": "~4.8.7",
+    "morgan": "~1.2.3",
+    "util": "~0.10.3",
+    "mongoose": "~3.8.15",
+    "body-parser": "~1.6.7"
   }
 }

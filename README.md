@@ -1,16 +1,10 @@
-React Coffescript Demo with Browserify and Gulp within existing Marionette app
+React & Flux Coffescript Demo with Browserify and Gulp
 ==================================
-
-## Notice
-This is a proof of concept to add React to
-an existing Marionette app.
 
 ## Goals
 - Add a react app
-- Keep Marionette/Backbone separate from the React app to keep React immutable.
-  (https://groups.google.com/forum/#!topic/reactjs/lT2pOKXUHY8)
-- Only use Marionette to coordinate the switching on and off
-of the react app or its own modules.
+- Use Flux architecture
+- Works with coffeescript and browserify.
 
 ## Setup
 
@@ -29,25 +23,26 @@ Install Gulp Globally
   npm install -g gulp
 ```
 
-Start App
+## Run
+1. Mongodb
+NOTE: you'll need to create './data/db' directories.
+```
+  mongod --dbpath ./data/db
+```
+
+2. Gulp
 ```
   gulp
 ```
 
+3. Express
+```
+  node ./build/server/app.js
+```
+
 ## Instructions for Specific Demos
 
-### CommentBox Module
-http://facebook.github.io/react/docs/tutorial.html
-
-- Add a directory 'data' to build/ with the following json data:
-
-```
-[
-  {"author": "Pete Hunt", "text": "This is one comment"},
-  {"author": "Jordan Walke", "text": "This is *another* comment"}
-]
-```
-
+...
 
 ## Sources
 - http://viget.com/extend/gulp-browserify-starter-faq

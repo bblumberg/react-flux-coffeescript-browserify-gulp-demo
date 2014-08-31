@@ -1,15 +1,8 @@
 {
-  "name": "ragnos-client",
+  "name": "react-flux-coffeescript-browserify-gulp-demo",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "backbone-query-parameters": "~0.3.0",
-    "backbone": "~1.1.2",
-    "backbone.babysitter": "~0.1.4",
-    "backbone.wreqr": "~1.3.1",
-    "backbone.picky": "~0.2.0",
-    "backbone.marionette": "~2.1.0",
-
     "jquery": "~2.1.0",
     "jquery.cookie": "~1.4.1",
 

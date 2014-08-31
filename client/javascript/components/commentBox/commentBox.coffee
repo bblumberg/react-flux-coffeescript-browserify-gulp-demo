@@ -13,6 +13,7 @@ CommentBox = React.createClass
     $.ajax(
       url: @props.url
       dataType: 'json'
+      type: 'GET'
       success:( (data) ->
         @setState {data}
       ).bind(@)
