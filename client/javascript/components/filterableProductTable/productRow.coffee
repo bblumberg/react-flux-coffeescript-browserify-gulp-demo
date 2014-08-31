@@ -16,7 +16,7 @@ ProductRow = React.createClass
     return (
       <tr>
         <td>{name}</td>
-        <td><@props.product.price</td>
+        <td>{@props.product.price}</td>
       </tr>
     )
 
