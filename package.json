@@ -4,7 +4,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "server": "node ./build/server/app.js"
+    "server": "node ./build/server/app.js",
+    "test": "jest"
   },
   "browser": {
     "jquery": "./client/bower_components/jquery/dist/jquery.js",
@@ -52,6 +53,8 @@
 
     "react": "~0.11.1",
 
+    "jest-cli": "~0.1.18",
+
     "karma": "~0.12.22",
     "karma-phantomjs-launcher": "~0.1.4",
     "karma-mocha-reporter": "~0.3.0",
@@ -64,6 +67,7 @@
     "morgan": "~1.2.3",
     "util": "~0.10.3",
     "mongoose": "~3.8.15",
+    "events": "~1.0.2",
     "body-parser": "~1.6.7"
   }
 }

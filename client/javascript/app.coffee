@@ -1,6 +1,4 @@
-###
-  Main app that holds all admin panel modules.
-###
+# Main app that holds all admin panel modules.
 
 'use strict'
 
@@ -8,5 +6,8 @@
 window.React = require('react')
 
 # Require apps below.
-require './components/commentBox/main'
-require './components/filterableProductTable/main'
+#require './components/commentBox/main'
+#require './components/filterableProductTable/main'
+require './components/fluxTodo/Main.react'
+
+console.log 'Started!'
