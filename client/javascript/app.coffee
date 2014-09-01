@@ -8,6 +8,6 @@ window.React = require('react')
 # Require apps below.
 #require './components/commentBox/main'
 #require './components/filterableProductTable/main'
-require './components/fluxTodo/Main.react'
+# require './components/fluxTodo/Main.react'
 
 console.log 'Started!'

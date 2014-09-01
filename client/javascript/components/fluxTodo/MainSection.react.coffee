@@ -28,6 +28,8 @@ MainSection = React.createClass(
     for key of allTodos
       todos.push(<TodoItem key={key} todo={allTodos[key]} />)
 
+    # TODO: Make input checked prop toggle Todo items,
+    # not just remove marks.
     return (
       <section id='main'>
         <input
@@ -36,7 +38,7 @@ MainSection = React.createClass(
           onChange={@_onToggleCompleteAll}
           checked={if @props.areAllComplete then 'checked' else ''}
         />
-        <label htmlFor="toggle-all">Mark all as complete</label>
+        <label htmlFor="toggle-all">Mark all as complete></label>
         <ul id='todo-list'>{todos}</ul>
       </section>
     )

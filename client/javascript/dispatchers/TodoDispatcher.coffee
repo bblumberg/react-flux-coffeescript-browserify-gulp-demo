@@ -1,6 +1,6 @@
 # A singleton that operates as the central hub for application updates.
 
-Dispatcher = require './Dispatcher'
+Dispatcher = require 'flux/lib/Dispatcher'
 
 copyProperties = require 'react/lib/copyProperties'
 

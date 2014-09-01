@@ -7,5 +7,5 @@ TodoApp = require './TodoApp.react'
 
 module.exports = React.renderComponent(
   <TodoApp />,
-  document.getElementById 'todoapp'
+  document.getElementById 'todoApp'
 )
