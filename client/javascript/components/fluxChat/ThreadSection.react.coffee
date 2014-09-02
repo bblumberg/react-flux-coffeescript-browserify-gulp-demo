@@ -29,15 +29,17 @@ ThreadSection = React.createClass(
     @setState(getStateFromStores())
 
   render: ->
-    threadListItems = @state.threads.map((thread) =>
-      return (
-        <ThreadListItem
-          key={thread.id}
-          thread={thread}
-          currentThreadID={@state.currentThreadID}
-        />
-      )
-    )
+    console.log @state.currentThreadID
+    threadListItems = @state.threads.map(
+      ((thread) ->
+        return (
+          <ThreadListItem
+            key={thread.id}
+            thread={thread}
+            currentThreadID={@state.currentThreadID}
+          />
+        )
+      ), @)
 
     unread = if @state.unreadCount is 0
       null

@@ -12,11 +12,12 @@ MessageComposer = React.createClass(
   getInitialState: ->
     text: ''
 
-  _onChange: (e) ->
+  _onChange: (e, val) ->
     @setState(text: e.target.value)
 
   _onKeyDown: (e) ->
     if e.keyCode is ENTER_KEY_CODE
+      console.log @state.text
       text = @state.text.trim()
       ChatMessageActionCreators.createMessage(text) if text
       @setState(text: '')

@@ -26,7 +26,7 @@ MessageSection = React.createClass(
 
   _scrollToBottom: ->
     ul = @refs.messageList.getDOMNode()
-    ul.scrollTop = ul.scroll
+    ul.scrollTop = ul.scrollHeight
 
   # Event handler for 'change' events coming from the MessageStore
   _onChange: ->

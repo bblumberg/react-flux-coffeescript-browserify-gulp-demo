@@ -18,6 +18,7 @@ ThreadListItem = React.createClass(
   render: ->
     thread = @props.thread
     lastMessage = thread.lastMessage
+    console.log @props.currentThreadID
     return (
       <li
         className={cx(
