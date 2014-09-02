@@ -1,3 +1,5 @@
+'use strict'
+
 TodoDispatcher = require '../dispatchers/TodoDispatcher'
 EventEmitter = require('events').EventEmitter
 TodoConstants = require '../constants/TodoConstants'

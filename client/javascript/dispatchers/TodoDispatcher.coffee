@@ -1,4 +1,5 @@
 # A singleton that operates as the central hub for application updates.
+'use strict'
 
 Dispatcher = require 'flux/lib/Dispatcher'
 

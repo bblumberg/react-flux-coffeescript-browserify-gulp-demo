@@ -1,3 +1,5 @@
+'use strict'
+
 TodoDispatcher = require '../dispatchers/TodoDispatcher'
 TodoConstants = require '../constants/TodoConstants'
 

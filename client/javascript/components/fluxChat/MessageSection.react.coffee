@@ -12,8 +12,13 @@ getStateFromStores = ->
   messages: MessageStore.getAllForCurrentThread()
   thread: ThreadStore.getCurrent()
 
-getMessageListItem = ->
-  <MessageListItem key={message.id} message={message} />
+getMessageListItem = (message) ->
+  return (
+    <MessageListItem
+      key={message.id}
+      message={message}
+    />
+  )
 
 MessageSection = React.createClass(
   getInitialState: ->
